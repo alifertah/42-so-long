@@ -6,7 +6,7 @@
 /*   By: alfertah <alfertah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:39:03 by alfertah          #+#    #+#             */
-/*   Updated: 2022/05/10 13:39:06 by alfertah         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:14:33 by alfertah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,24 +73,5 @@ int	ft_putnbr(int n)
 	}
 	else
 		len += (ft_putchar(n + 48));
-	return (len);
-}
-
-int	ft_hexa(unsigned long n, int s)
-{
-	int	len;
-
-	len = 0;
-	if (n >= 16)
-		len += ft_hexa(n / 16, s);
-	if (n % 16 < 10)
-		len += ft_putchar((n % 16) + 48);
-	else
-	{
-		if (s == 1)
-			len += ft_putchar((n % 16) + 87);
-		else
-			len += ft_putchar((n % 16) + 55);
-	}
 	return (len);
 }

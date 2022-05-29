@@ -6,7 +6,7 @@
 /*   By: alfertah <alfertah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:39:55 by alfertah          #+#    #+#             */
-/*   Updated: 2022/05/10 13:39:57 by alfertah         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:15:06 by alfertah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ int		ft_putchar(char c);
 int		ft_unsigned_int(unsigned int n);
 int		ft_putstr(char *s);
 int		ft_putnbr(int n);
-int		ft_hexa(unsigned long n, int s);
 size_t	ft_strlen(char *s);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strchr(char *s, int c);

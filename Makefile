@@ -15,9 +15,9 @@ $(NAME) : $(OBJCTS)
 all: $(NAME)
 
 clean:
-		rm -f $(OBJCTS) $(BOBJCTS)
+		rm -f $(OBJCTS)
 
 fclean: clean
-		rm -f $(NAME) so_long_bonus
+		rm -f $(NAME)
 		
 re: fclean all	

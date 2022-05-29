@@ -6,7 +6,7 @@
 /*   By: alfertah <alfertah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:39:46 by alfertah          #+#    #+#             */
-/*   Updated: 2022/05/11 10:29:57 by alfertah         ###   ########.fr       */
+/*   Updated: 2022/05/27 18:57:29 by alfertah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	ft_move_right(t_map *t)
 				{
 					if (ft_check_collect(t) == 0)
 					{
-						ft_printf("\033[0;33m=== YOU WON ===\n");
+						ft_printf("\033[0;32m=== YOU WON ===\n");
 						exit(0);
 					}
 				}

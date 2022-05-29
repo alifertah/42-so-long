@@ -6,7 +6,7 @@
 /*   By: alfertah <alfertah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:37:51 by alfertah          #+#    #+#             */
-/*   Updated: 2022/05/13 13:26:19 by alfertah         ###   ########.fr       */
+/*   Updated: 2022/05/27 19:27:39 by alfertah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ int	main(int ac, char **av)
 	}
 	if (ft_arg(av) == 0)
 	{
-		ft_printf("\033[0;31m extention -> .ber!!\n");
+		ft_printf("\033[0;31m map -> .ber!!\n");
 		exit(1);
 	}
 	ft_read_so_long(&t, av);

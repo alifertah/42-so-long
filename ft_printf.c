@@ -6,7 +6,7 @@
 /*   By: alfertah <alfertah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/10 13:39:10 by alfertah          #+#    #+#             */
-/*   Updated: 2022/05/10 13:39:14 by alfertah         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:15:37 by alfertah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,10 @@ void	print(char c, va_list cp, int *s)
 		*s += ft_putchar(va_arg(cp, int));
 	else if (c == 's')
 		*s += ft_putstr(va_arg(cp, char *));
-	else if (c == 'x')
-		*s += ft_hexa(va_arg(cp, unsigned int), 1);
-	else if (c == 'X')
-		*s += ft_hexa(va_arg(cp, unsigned int), 0);
 	else if (c == 'p')
 	{
 		ft_putstr("0x");
 		*s += 2;
-		*s += ft_hexa(va_arg(cp, unsigned long), 1);
 	}
 	else if (c == 'u')
 		*s += ft_unsigned_int(va_arg(cp, unsigned int));
